@@ -123,11 +123,9 @@ class 신규아이디추천 {
         if(result != "" && result[result.length - 1] == '.')
             result = result.substring(0, result.length - 1);
 
-
         // 5.빈 문자열이라면, new_id에 "a"를 대입
         if (result == "")
             result="a"
-
 
         // 6. 16자 이상이면 15개 까지 제거한 후
         if (result.length >= 16){
@@ -138,14 +136,12 @@ class 신규아이디추천 {
                 result = result.substring(0, result.length-1)
         }
 
-
         // 7단계 new_id의 길이가 2자 이하라면, new_id의 마지막 문자를
         if (result.length <= 2){
             while (result.length < 3){ //new_id의 길이가 3이 될 때까지 반복해서 끝에 붙임.
                 result += result[result.length - 1]
             }
         }
-
 
         return result
     }
