@@ -2,8 +2,11 @@ package com.example.algorithm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
+import com.example.algorithm.level1.숫자문자열과영단어
 import com.example.algorithm.level1.신규아이디추천
+import com.example.algorithm.level2.문자열압축
 
 class MainActivity : AppCompatActivity() {
     lateinit var btn: Button
@@ -33,11 +36,10 @@ class MainActivity : AppCompatActivity() {
             }*/
 
             //JadenCase().solution("3people unFollowed me")
-            신규아이디추천().solution("...!@BaT#*..y.abcdefghijklm")
-            신규아이디추천().solution("z-+.^.")
-            신규아이디추천().solution("=.=")
-            신규아이디추천().solution("123_.def")
-            신규아이디추천().solution("abcdefghijklmn.p")
+
+            //문자열압축().solution("aabbaccc")
+
+            Log.d("숫자 문자열과 영단어" , "${숫자문자열과영단어().solution("one4seveneight")}")
         }
     }
 }
