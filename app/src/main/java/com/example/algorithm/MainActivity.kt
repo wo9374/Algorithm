@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import com.example.algorithm.level1.숫자문자열과영단어
 import com.example.algorithm.level1.신규아이디추천
+import com.example.algorithm.level1.크레인인형뽑기게임
 import com.example.algorithm.level2.문자열압축
 
 class MainActivity : AppCompatActivity() {
@@ -39,7 +40,18 @@ class MainActivity : AppCompatActivity() {
 
             //문자열압축().solution("aabbaccc")
 
-            Log.d("숫자 문자열과 영단어" , "${숫자문자열과영단어().solution("one4seveneight")}")
+            //Log.d("숫자 문자열과 영단어" , "${숫자문자열과영단어().solution("one4seveneight")}")
+
+            val arr = arrayOf(
+                intArrayOf(0,0,0,0,0),
+                intArrayOf(0,0,1,0,3),
+                intArrayOf(0,2,5,0,1),
+                intArrayOf(4,2,4,4,2),
+                intArrayOf(3,5,1,3,1)
+            )
+
+            val moves = intArrayOf(1,5,3,5,1,2,1,4)
+            Log.d("크레인인형뽑기게임 터트려진 인형수" , "${크레인인형뽑기게임().solution(arr, moves)}")
         }
     }
 }
