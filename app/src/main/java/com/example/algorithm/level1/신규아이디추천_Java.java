@@ -1,6 +1,6 @@
 package com.example.algorithm.level1;
 
-public class IdRecommendation_Java {
+public class 신규아이디추천_Java {
     public String solution(String new_id) {
 
         String result = "";

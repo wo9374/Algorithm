@@ -18,7 +18,7 @@ arr	result
 [1,2,3]	6
  * */
 
-class ArrayLeastCommonMultiple {
+class 배열_최소공배수 {
     fun solution(arr: IntArray): Int {
         var gcd = GCD(arr[0], arr[1])    // [0], [1]의 최대 공약수 구하기
         var lcm = arr[0] * arr[1] / gcd  // [0], [1]의 최소 공배수 구하기

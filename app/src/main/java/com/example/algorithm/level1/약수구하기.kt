@@ -21,7 +21,7 @@ package com.example.algorithm.level1
  * 입출력 예 #2
  * 5의 약수는 1, 5입니다. 이를 모두 더하면 6입니다.
  * */
-class ComputeDivisor {
+class 약수구하기 {
     fun solution(n: Int): Int {
         var answer = 0
 

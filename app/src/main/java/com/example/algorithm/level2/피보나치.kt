@@ -23,7 +23,7 @@ package com.example.algorithm.level2
  *입출력 예 설명
  *피보나치수는 0번째부터 0, 1, 1, 2, 3, 5, ... 와 같이 이어집니다.
  * */
-class Pibonachi {
+class 피보나치 {
     fun solution(n: Int): Int {
         var a = 0
         var b = 1

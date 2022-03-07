@@ -98,7 +98,7 @@ no	new_id	result
 7단계 변화 없습니다.
  * */
 
-class IdRecommendation {
+class 신규아이디추천 {
     fun solution(new_id: String): String {
 
         // 1. 소문자 치환

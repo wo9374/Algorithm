@@ -3,7 +3,7 @@ package com.example.algorithm
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.algorithm.level1.IdRecommendation
+import com.example.algorithm.level1.신규아이디추천
 
 class MainActivity : AppCompatActivity() {
     lateinit var btn: Button
@@ -33,11 +33,11 @@ class MainActivity : AppCompatActivity() {
             }*/
 
             //JadenCase().solution("3people unFollowed me")
-            IdRecommendation().solution("...!@BaT#*..y.abcdefghijklm")
-            IdRecommendation().solution("z-+.^.")
-            IdRecommendation().solution("=.=")
-            IdRecommendation().solution("123_.def")
-            IdRecommendation().solution("abcdefghijklmn.p")
+            신규아이디추천().solution("...!@BaT#*..y.abcdefghijklm")
+            신규아이디추천().solution("z-+.^.")
+            신규아이디추천().solution("=.=")
+            신규아이디추천().solution("123_.def")
+            신규아이디추천().solution("abcdefghijklmn.p")
         }
     }
 }

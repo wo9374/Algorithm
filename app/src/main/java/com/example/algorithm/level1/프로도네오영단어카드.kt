@@ -50,7 +50,7 @@ package com.example.algorithm.level1
  * 입출력 예 #4
  * s에는 영단어로 바뀐 부분이 없습니다.
  * */
-class ProdoNeoEnglishNumCard {
+class 프로도네오영단어카드 {
     fun solution(s: String): Int {
         val numSet = arrayOf("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
         var str = s
