@@ -3,7 +3,7 @@ package com.example.algorithm
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.algorithm.level2.JadenCase
+import com.example.algorithm.level1.IdRecommendation
 
 class MainActivity : AppCompatActivity() {
     lateinit var btn: Button
@@ -32,7 +32,12 @@ class MainActivity : AppCompatActivity() {
                 Log.d("Hash 문제/전화번호목록", "접두사 존재")
             }*/
 
-            JadenCase().solution("3people unFollowed me")
+            //JadenCase().solution("3people unFollowed me")
+            IdRecommendation().solution("...!@BaT#*..y.abcdefghijklm")
+            IdRecommendation().solution("z-+.^.")
+            IdRecommendation().solution("=.=")
+            IdRecommendation().solution("123_.def")
+            IdRecommendation().solution("abcdefghijklmn.p")
         }
     }
 }
