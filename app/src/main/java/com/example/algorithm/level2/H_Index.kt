@@ -22,14 +22,17 @@ citations	        return
  * */
 class H_Index {
     fun solution(citations: IntArray): Int {
-        var list = citations.apply {
+        citations.apply {
             sortDescending()
-            mapIndexed { index, cited ->
-
+            forEachIndexed { index, cited ->
+                if (cited <= index)
+                    return index
             }
         }
-        
-        var answer = 0
-        return citations.sortDescending().
+        return citations.size
     }
+}
+
+class Solution {
+    fun solution(citations: IntArray) = citations.sortedDescending().mapIndexed { idx, item -> Math.min(idx + 1, item) }.max()
 }
