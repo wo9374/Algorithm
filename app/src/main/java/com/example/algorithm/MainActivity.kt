@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import com.example.algorithm.고득점Kit.hash.level2.위장
+import com.example.algorithm.고득점Kit.hash.베스트_앨범
 import com.example.algorithm.고득점Kit.정렬.level1.K번째_수
 import com.example.algorithm.고득점Kit.정렬.level2.가장큰수
 
@@ -69,12 +70,18 @@ class MainActivity : AppCompatActivity() {
             Log.d("K번째 수", "${K번째_수().solution(array, commands)}")*/
 
 
-            val commands = arrayOf(
+          /*  val commands = arrayOf(
                 arrayOf("yellow_hat", "headgear"),
                 arrayOf("blue_sunglasses", "eyewear"),
                 arrayOf("green_turban", "headgear"),
             )
-            Log.d("위장", "${위장().solution(commands)}")
+            Log.d("위장", "${위장().solution(commands)}")*/
+
+
+            val genres = arrayOf("classic", "pop", "classic", "classic", "pop")
+            val plays = intArrayOf(500, 600, 150, 800, 2500)
+
+            Log.d("베스트_앨범", "${베스트_앨범().solution(genres,plays)}")
         }
     }
 }

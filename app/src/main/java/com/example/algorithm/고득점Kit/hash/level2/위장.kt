@@ -49,11 +49,9 @@ face에 해당하는 의상이 crow_mask, blue_sunglasses, smoky_makeup이므로
 
 class 위장 {
     fun solution(clothes: Array<Array<String>>): Int {
-        var answer = 0
-
         // 옷을 입는 방법의 수는 (종류 1 옷의 수) * (종류 2 옷의 수) * ...
 
-        clothes.groupBy {
+        return clothes.groupBy {
             it[1]    //착용부위에 따라 그룹핑 //headgear, eyewear, face 등등
         }.values.fold(1){
             acc, list ->  acc * (list.size+1)
@@ -62,6 +60,5 @@ class 위장 {
         // .fold 메소드는 .reduce와 같이 배열을 순회하며 클로저를 실행해 결과를 acc에 누적하는 역할을 하지만,
         // .reduce는 배열의 첫 번째 값을 acc의 초깃값으로 사용하는 반면,
         // .fold를 사용하면 acc의 초깃값을 지정가능
-        return answer
     }
 }
