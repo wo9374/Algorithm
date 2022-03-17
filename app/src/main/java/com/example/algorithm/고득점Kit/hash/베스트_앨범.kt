@@ -38,14 +38,9 @@ pop 장르는 3,100회 재생되었으며, pop 노래는 다음과 같습니다.
  * */
 class 베스트_앨범 {
     fun solution(genres: Array<String>, plays: IntArray): IntArray {
-        var hashMap = HashMap<String, Any>()//장르 노래 재생시간의 합
-
-
-
-
 
         //노래의 고유 번호가 필요하므로, withIndex() 메소드를 사용하여 index를 사용해 plays와 genres를 매칭
-        plays.withIndex().groupBy { genres[it.index] }.values         //groupBy() 메소드로 {장르: [노래, ...], ...}와 같은 데이터를 완성
+        return plays.withIndex().groupBy { genres[it.index] }.values         //groupBy() 메소드로 {장르: [노래, ...], ...}와 같은 데이터를 완성
             .sortedByDescending { it -> it.sumBy { it.value } }       //이후 이를 sumBy, 즉 장르를 재생한 시간을 기준으로 큰 순으로 정렬
             .map { v -> v.sortedByDescending { it.value }.map { it.index } }  //장르 내에서 많이 재생된 노래 순으로 다시 정렬
             .fold(intArrayOf()) { acc, v -> acc + v.subList(0, Math.min(2, v.size)) }
@@ -54,11 +49,14 @@ class 베스트_앨범 {
         .fold() 메소드를 통해 초기값을 지정하여 reduce를 실행,
         .subList 메소드의 경우 범위를 넘어서는 인덱스를 입력하면 Out Of Bounds 에러를 발생시키니 min을 활용하여 에러 발생 요소를 원천 차단
         */
+    }
 
-
-        //장르 내에서 많이 재생된 노래 순으로 다시 정렬
-
-        var answer = intArrayOf()
-        return answer
+    fun solution2(genres: Array<String>, plays: IntArray): IntArray {
+        return genres.indices.groupBy { genres[it] }
+            .toList()
+            .sortedByDescending { it.second.sumBy { plays[it] } }
+            .map { it.second.sortedByDescending { plays[it] }.take(2) }
+            .flatten()
+            .toIntArray()
     }
 }
