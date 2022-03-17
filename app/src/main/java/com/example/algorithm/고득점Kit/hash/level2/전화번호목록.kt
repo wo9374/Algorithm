@@ -1,4 +1,4 @@
-package com.example.algorithm.hash
+package com.example.algorithm.고득점Kit.hash.level2
 
 import java.util.HashMap
 

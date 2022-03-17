@@ -1,6 +1,4 @@
-package com.example.algorithm.level2
-
-import android.util.Log
+package com.example.algorithm.고득점Kit.정렬.level2
 
 /**
  * 문제 설명
@@ -33,6 +31,17 @@ class 가장큰수 {
         numbers.sortedWith {
                 s1, s2 -> "$s2$s1".compareTo("$s1$s2")
         }.forEach { answer+=it }
+
+        if (answer.first() == '0') answer = "0"
+        return answer
+    }
+}
+
+class 가장큰수2 {
+    fun solution(numbers: IntArray): String {
+        var answer = numbers.sortedWith {
+                s1, s2 -> "$s2$s1".compareTo("$s1$s2")
+        }.fold("") { total, next -> total + next }
 
         if (answer.first() == '0') answer = "0"
         return answer

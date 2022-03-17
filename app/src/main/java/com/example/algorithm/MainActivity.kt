@@ -4,11 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import com.example.algorithm.level1.숫자문자열과영단어
-import com.example.algorithm.level1.신규아이디추천
-import com.example.algorithm.level1.크레인인형뽑기게임
-import com.example.algorithm.level2.가장큰수
-import com.example.algorithm.level2.문자열압축
+import com.example.algorithm.고득점Kit.정렬.level2.가장큰수
 
 class MainActivity : AppCompatActivity() {
     lateinit var btn: Button
