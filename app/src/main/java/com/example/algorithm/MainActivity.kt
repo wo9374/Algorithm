@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import com.example.algorithm.고득점Kit.정렬.level1.K번째_수
 import com.example.algorithm.고득점Kit.정렬.level2.가장큰수
 
 class MainActivity : AppCompatActivity() {
@@ -53,8 +54,17 @@ class MainActivity : AppCompatActivity() {
             Log.d("크레인인형뽑기게임 터트려진 인형수" , "${크레인인형뽑기게임().solution(arr, moves)}")
 */
 
-            val maxInt = intArrayOf(3,30,34,5,9)
-            Log.d("가장큰수", 가장큰수().solution(maxInt))
+//            val maxInt = intArrayOf(3,30,34,5,9)
+//            Log.d("가장큰수", 가장큰수().solution(maxInt))
+
+
+            val array = intArrayOf(1,5,2,6,3,7,4)
+
+            var i1 = intArrayOf(2,5,3)
+            var i2 = intArrayOf(4,4,1)
+            var i3 = intArrayOf(1,7,3)
+            val commands = arrayOf(i1,i2,i3)
+            Log.d("K번째 수", "${K번째_수().solution(array, commands)}")
         }
     }
 }
