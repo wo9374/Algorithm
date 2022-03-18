@@ -2,12 +2,9 @@ package com.example.algorithm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
-import com.example.algorithm.고득점Kit.hash.level2.위장
-import com.example.algorithm.고득점Kit.hash.베스트_앨범
-import com.example.algorithm.고득점Kit.정렬.level1.K번째_수
-import com.example.algorithm.고득점Kit.정렬.level2.가장큰수
+import com.example.algorithm.고득점Kit.완전탐색.level2.소수찾기_combination
+import com.example.algorithm.고득점Kit.완전탐색.level2.소수찾기_순열포함
 
 class MainActivity : AppCompatActivity() {
     lateinit var btn: Button
@@ -78,10 +75,14 @@ class MainActivity : AppCompatActivity() {
             Log.d("위장", "${위장().solution(commands)}")*/
 
 
-            val genres = arrayOf("classic", "pop", "classic", "classic", "pop")
+            /*val genres = arrayOf("classic", "pop", "classic", "classic", "pop")
             val plays = intArrayOf(500, 600, 150, 800, 2500)
 
-            Log.d("베스트_앨범", "${베스트_앨범().solution(genres,plays)}")
+            Log.d("베스트_앨범", "${베스트_앨범().solution(genres,plays)}")*/
+
+            //소수찾기_순열포함().solution("17")
+
+            소수찾기_combination().solution("011") // 17, 011
         }
     }
 }
