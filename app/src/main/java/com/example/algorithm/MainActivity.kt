@@ -3,8 +3,7 @@ package com.example.algorithm
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.algorithm.고득점Kit.완전탐색.level2.소수찾기_combination
-import com.example.algorithm.고득점Kit.완전탐색.level2.소수찾기_순열포함
+import com.example.algorithm.고득점Kit.DFS_NFS_깊이_너비_우선탐색.타겟넘버_DFS
 
 class MainActivity : AppCompatActivity() {
     lateinit var btn: Button
@@ -82,7 +81,12 @@ class MainActivity : AppCompatActivity() {
 
             //소수찾기_순열포함().solution("17")
 
-            소수찾기_combination().solution("011") // 17, 011
+
+            //소수찾기_combination().solution("011") // 17, 011
+
+            val numbers = intArrayOf(1, 1, 1, 1, 1)
+            val target = 3
+            타겟넘버_DFS().solution(numbers,target)
         }
     }
 }

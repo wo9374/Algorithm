@@ -29,7 +29,7 @@ numbers	return
 
 11과 011은 같은 숫자로 취급합니다.
  * */
-class 소수찾기_순열포함 {
+class 소수찾기_순열포함 { //오답
     fun solution(numbers: String): Int {
 
         //글자 하나로 배열 생성
