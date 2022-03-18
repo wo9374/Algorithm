@@ -1,4 +1,4 @@
-package com.example.algorithm.level2
+package com.example.algorithm.고득점Kit.greedy
 
 /**
  * 문제설명
