@@ -3,7 +3,7 @@ package com.example.algorithm
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.algorithm.고득점Kit.DFS_NFS_깊이_너비_우선탐색.타겟넘버_DFS
+import com.example.algorithm.고득점Kit.DFS_NFS_깊이_너비_우선탐색.level2.타겟넘버_DFS
 
 class MainActivity : AppCompatActivity() {
     lateinit var btn: Button

@@ -1,4 +1,4 @@
-package com.example.algorithm.고득점Kit.DFS_NFS_깊이_너비_우선탐색
+package com.example.algorithm.고득점Kit.DFS_NFS_깊이_너비_우선탐색.level2
 
 /**
  * 문제 설명

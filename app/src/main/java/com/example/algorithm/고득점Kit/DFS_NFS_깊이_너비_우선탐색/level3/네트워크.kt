@@ -19,4 +19,8 @@ n	computers	return
 입출력 예 설명
  * */
 class 네트워크 {
+    fun solution(n: Int, computers: Array<IntArray>): Int {
+        var answer = 0
+        return answer
+    }
 }
