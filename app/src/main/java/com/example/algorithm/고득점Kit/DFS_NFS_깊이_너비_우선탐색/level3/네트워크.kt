@@ -19,8 +19,36 @@ n	computers	return
 입출력 예 설명
  * */
 class 네트워크 {
+    val disconnected = mutableListOf<Int>()
+
     fun solution(n: Int, computers: Array<IntArray>): Int {
         var answer = 0
+        for (i in 0 until n) disconnected.add(i)
+
+        while (disconnected.size > 0) {
+            // 새로운 네트워크
+            answer++
+
+            dfs(n, computers, disconnected.removeAt(0))
+        }
+
         return answer
     }
+
+    fun dfs(n: Int, computers: Array<IntArray>, computer: Int) {
+        for (i in 0 until n) {
+            // 두 컴퓨터가 연결되어 있는 경우
+            if (disconnected.contains(i) && computers[computer][i] == 1) {
+                // 네트워크에 속하게 되는 컴퓨터는 리스트에서 제거
+                disconnected.remove(i)
+
+                dfs(n, computers, i)
+            }
+        }
+    }
+
+
+    //모든 컴퓨터들을 disconnected 배열에 넣어 초기화.
+    //disconnected 배열에 있는 컴퓨터가 없을 때까지 dfs로 연결된 모든 컴퓨터들을 확인한 후 disconnected 배열에서 제거.
+    //disconnected 배열에 아무것도 존재하지 않으면 모든 컴퓨터가 네트워크에 연결된 것이므로 종료.
 }
