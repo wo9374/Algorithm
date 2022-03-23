@@ -84,9 +84,19 @@ class MainActivity : AppCompatActivity() {
 
             //소수찾기_combination().solution("011") // 17, 011
 
-            val numbers = intArrayOf(1, 1, 1, 1, 1)
+
+            /*val numbers = intArrayOf(1, 1, 1, 1, 1)
             val target = 3
-            타겟넘버_DFS().solution(numbers,target)
+            타겟넘버_DFS().solution(numbers,target)*/
+
+
+
+            val rounds = arrayOf(
+                arrayOf("b", "a", "a", "d"),
+                arrayOf("b", "c", "a", "c"),
+                arrayOf("b", "a", "d", "c")
+            )
+            커플매칭().solution(rounds)
         }
     }
 }
