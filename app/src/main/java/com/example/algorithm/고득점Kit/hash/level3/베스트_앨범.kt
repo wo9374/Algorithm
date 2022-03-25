@@ -1,6 +1,4 @@
-package com.example.algorithm.고득점Kit.hash
-
-import android.util.Log
+package com.example.algorithm.고득점Kit.hash.level3
 
 /**
  * 문제 설명
