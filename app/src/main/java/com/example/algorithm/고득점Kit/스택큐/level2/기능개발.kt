@@ -1,6 +1,4 @@
-package com.example.algorithm.level2
-
-import java.lang.Math.ceil
+package com.example.algorithm.고득점Kit.스택큐.level2
 
 /**
  * 문제 설명
