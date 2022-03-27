@@ -42,7 +42,7 @@ class 프린터 {
     fun solution(priorities: IntArray, location: Int): Int {
         val printQueue = priorities.withIndex().toMutableList()
         var count = 0
-        
+
         while (printQueue.isNotEmpty()) {
             val current: IndexedValue<Int> = printQueue.first()
             printQueue.removeAt(0)
